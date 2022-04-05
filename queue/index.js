@@ -14,7 +14,7 @@ class Stack {
   get length() {
     return this.stack.length;
   }
-  
+
   peek() {
     return this.stack[this.length - 1];
   }
@@ -28,5 +28,10 @@ newStack.push('goose');
 newStack.push('lizard');
 newStack.pop();
 newStack.peek();
+newStack.pop();
+newStack.push('llama');
+newStack.pop();
+newStack.peek();
+newStack.pop();
 
-console.log(newStack.peek());
+console.log(newStack);
