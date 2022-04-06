@@ -29,3 +29,18 @@ function oddishOrEvenish(num) {
   }
 }
 console.log(oddishOrEvenish(num2));
+
+
+function fizzBuzz(num) {
+  // input: 16
+  // take +n, return arr 1-n (x3 = fizz, x5 = buzz, x3&5 = fizzbuzz)
+  
+}
+
+fizzBuzz(16);
+// Output: [
+//   1, 2, 'Fizz', 4, 'Buzz',
+//   'Fizz', 7, 8, 'Fizz', 'Buzz',
+//   11, 'Fizz', 13, 14, 'FizzBuzz',
+//   16
+// ];
