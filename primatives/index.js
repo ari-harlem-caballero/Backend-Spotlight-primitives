@@ -34,7 +34,7 @@ console.log(oddishOrEvenish(num2));
 function fizzBuzz(num) {
   // input: 16
   // take +n, return arr 1-n (x3 = fizz, x5 = buzz, x3&5 = fizzbuzz)
-  
+
 }
 
 fizzBuzz(16);
@@ -44,3 +44,12 @@ fizzBuzz(16);
 //   11, 'Fizz', 13, 14, 'FizzBuzz',
 //   16
 // ];
+
+function uniqueString(strings) {
+  //take arr of strings, output 1 diff string in arr
+}
+
+// | Input                                                     |   Output |
+// | --------------------------------------------------------- | -------: |
+// | `[ 'Aa', 'aaa', 'aaaaa', 'BbBb', 'Aaaa', 'AaAaAa', 'a' ]` | `'BbBb'` |
+// | `[ 'abc', 'acb', 'bac', 'foo', 'bca', 'cab', 'cba' ]`     |  `'foo'` |
