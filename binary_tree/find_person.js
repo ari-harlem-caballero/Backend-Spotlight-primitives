@@ -1,6 +1,6 @@
 class PersonTreeNode {
   constructor(person) {
-    this.value = person.name;
+    this.data = person.name;
     this.person = person;
     this.left = null;
     this.right = null;
@@ -11,7 +11,7 @@ class PersonTreeNode {
     //if there is a node equals data
     if(node.data === this.data) return;
     // if node is < data, add to left (if no left node, add)
-    const dir = node.value < this.value ? 'left' : 'right';
+    const dir = node.data < this.data ? 'left' : 'right';
     if(!this[dir]) this[dir] = node;
     // if node is > data, add to left (if no right, add)
     else this[dir].add(node);
@@ -19,6 +19,14 @@ class PersonTreeNode {
 
   findPerson(name) {
     // Implement me!
+    // if data of instance = name of person, return person's info
+    if(this.data === name) return this.person;
+    // set left/right
+    const dir = node.data < this.data ? 'left' : 'right';
+    // if no node return null
+    if(!this[dir]) return null;
+    // if node, return left/right
+    return this[dir].findPerson(name);
   }
 }
 
