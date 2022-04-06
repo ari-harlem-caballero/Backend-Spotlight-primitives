@@ -7,13 +7,15 @@ class BinaryTreeNode {
 
   add(node) {
     // Implement me!
-    if(node.value === this.data) {
+    //if there is a 
+    if(node.data === this.data) {
       return;
     }
-
-    if(node.value < this.value) {
+    // if node is < data, add to left (if no left node, add)
+    if(node.data < this.data) {
       if(!this.left) this.left = node;
       else this.left.add(node);
+    // if node is > data, add to left (if no right, add)
     } else {
       if(!this.right) this.right = node;
       else this.right.add(node);
