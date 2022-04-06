@@ -15,6 +15,12 @@ class LinkedListNode {
       this.next.add(node);
     }
   }
+
+  getList() {
+    if(!this.next) return this.data;
+
+    return `${this.data} ${this.next.getList()}`;
+  }
 }
 
 
@@ -28,4 +34,4 @@ const nodeD = new LinkedListNode('D');
 const nodeE = new LinkedListNode('E');
 root.add(nodeD);
 root.add(nodeE);
-console.log(root); // 'A B'
+console.log(root.getList()); // 'A B'
