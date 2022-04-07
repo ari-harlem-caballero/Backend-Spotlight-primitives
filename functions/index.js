@@ -15,12 +15,26 @@ console.log(map([1, 6, 5], (n) => n * 2));
 
 // | Input                       | Output        |
 // | --------------------------- | ------------- |
-// | `map([1, 6, 5], n => n**2)` | `[1, 36, 25]` |
+// | `map([1, 6, 5], n => n**2)` | `[1, 36, 25]` | ???
 
 
 function every(arr, predicate) {
+  // loop thru all items in arr, if modulo of 2 = 0 return true
+  let allItemsValidity = true;
+  for (let i = 0; i < arr.length; i++) {
+    const item = arr[i];
+    // if modulo of 2 /= 0 return false (break once finding first false)
+    if (!predicate(item)) {
+      allItemsValidity = false;
+      break;
+    }
+  }
 
+  return allItemsValidity;
 }
+
+console.log(every([1, 2, 3], n => n % 2 === 0));
+console.log(every([2, 4, 6], n => n % 2 === 0));
 
 // | Input                                | Output  |
 // | ------------------------------------ | ------- |
