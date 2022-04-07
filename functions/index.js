@@ -15,7 +15,7 @@ console.log(map([1, 6, 5], (n) => n * 2));
 
 // | Input                       | Output        |
 // | --------------------------- | ------------- |
-// | `map([1, 6, 5], n => n**2)` | `[1, 36, 25]` | ???
+// | `map([1, 6, 5], n => n**2)` | `[1, 36, 25]` | !!! USED DAN'S equation demo but doesn't actually solve for n (squared), confusion !!!
 
 
 function every(arr, predicate) {
@@ -45,6 +45,7 @@ console.log(every([2, 4, 6], n => n % 2 === 0));
 function rootDigit(n) {
   // returns 1# that is sum of all digits of input number
   // when sum = 2+ digits, add those til only 1 digit output
+  // !!! NOT SURE HOW TO IMPLIMENT !!!
 }
 
 // | Input       | Output | Notes                               |

@@ -32,8 +32,9 @@ console.log(oddishOrEvenish(num2));
 
 
 function fizzBuzz(num) {
-  // input: 16
+  // !!! WORK IN PROGRESS !!!
   // take +n, return arr 1-n (x3 = fizz, x5 = buzz, x3&5 = fizzbuzz)
+  // index modulo of 3 (and 5) push indiv strings, if none push i
 
 }
 
@@ -47,6 +48,7 @@ fizzBuzz(16);
 
 function uniqueString(strings) {
   //take arr of strings, output 1 diff string in arr
+  // !!! NOT QUITE SURE HOW TO IMPLIMENT THIS !!!
 }
 
 // | Input                                                     |   Output |

@@ -18,7 +18,8 @@ class PersonTreeNode {
   }
 
   findPerson(name) {
-    // Implement me!
+    // !!! TRIED TO FOLLOW MARTY'S DEMO AND THIS DOESN'T MAKE SENSE TO ME !!!
+    // !!! WILL NEED TO RETURN TO!!!!!!!
     // if data of instance = name of person, return person's info
     if(this.data === name) return this.person;
     // set left/right
